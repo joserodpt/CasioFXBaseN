@@ -242,13 +242,13 @@ int main(void)
         if (key.type == KEYEV_DOWN) {
             if (key.key == KEY_F1) {
                 modeSelector = 0;
-                input[0] = '\0';
+                input[0] = '\0'; length = 0;
             } else if (key.key == KEY_F2) {
                 modeSelector = 1;
-                input[0] = '\0';
+                input[0] = '\0'; length = 0;
             } else if (key.key == KEY_F3) {
                 modeSelector = 2;
-                input[0] = '\0';
+                input[0] = '\0'; length = 0;
             } else if (key.key == KEY_DEL && length > 0) {
                 // Handle backspace
                 length--;
